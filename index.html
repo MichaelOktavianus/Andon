@@ -8,10 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+        <div class="c"> <h4>Company Logo</h4>  </div>
+        <div class="o"><h4>Overall Equipment Effectiveness Dashboard</h4> </div>
+    </div>
+    <div class="option">
+        <div class="area, opt1">
+            <h4>Select Area</h4>
+            <select name="AAA" id="area">
+                <option value="ProdLine01">ProdLine01</option>
+            </select>
+        </div>
+        <div class="unit, opt1">
+            <h4>Select Unit</h4>
+            <select name="AAA" id="unit">
+                <option value="All">All Units</option>
+            </select>
+        </div>
+        <div class="view, opt1">
+            <h4>Select View</h4>
+            <select name="AAA" id="view">
+                <option value="A">Yesterday</option>
+            </select>
+        </div>
+        <div class="Stime, opt2">
+            <h4>Start Time</h4>
+            <input type="date" name="start" id="start-time" >
+        </div>
+        <div class="Etime, opt2">
+            <h4>End Time</h4>
+            <input type="date" name="end" id="end-time">
+        </div>
+        </div>
+    </div>
     <div class="container">
+
+
         <div class="section , sec1">
-
-
+            <div class="progress">
+                <span class="progress-val">37%</span>
+            </div>
         </div>
         <div class="section , sec2">
             <h3 class="accu">Accumulated</h3>
@@ -19,7 +55,8 @@
             <h4 id="dur"></h4>
         </div>
         <div class="section , sec3">
-            <canvas id="myChart"></canvas>
+            <button id="start-btn">START</button>
+            <button id="stop-btn">STOP</button>
         </div>
         <div class="section , sec4">
             <h4 class="txt">Avg</h4>
@@ -27,11 +64,9 @@
                 <h4 id="avg">00.00</h4>
                 <h4 id="sc">/s</h4>
             </div>
-            
-            
         </div>
         <div class="section , sec5">
-            <h1>Image</h1>
+            <canvas id="myChart"></canvas>
         </div>
 
     </div>

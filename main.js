@@ -1,12 +1,27 @@
 const avgText = document.querySelector("#avg")
 const totalText = document.querySelector("#total")
 const durText = document.querySelector("#dur")
+const startBtn = document.querySelector("#start-btn")
+const stopBtn = document.querySelector("#stop-btn")
+
+let graphh
+let chartt
+
+startBtn.addEventListener("click", function () {
+  graphh = setInterval(graph, 2000)
+  chartt = setInterval(chart1, 2000)
+})
+stopBtn.addEventListener("click", function () {
+clearInterval(graphh)
+clearInterval(chartt)
+})
+
 
 let ran
 let tota = 0
 let firstDur 
-setInterval(graph, 5000);
-setInterval(chart1, 5000);
+
+
 
 
 
